@@ -19,11 +19,6 @@ const Home = () => {
     apiKey: process.env.REACT_APP_OPENAI_API_KEY, // your api key...
   });
 
-  console.log(
-    "REACT_APP_OPENAI_API_KEY" + process.env.REACT_APP_OPENAI_API_KEY
-  );
-  console.log("OPENAI_API_KEY" + process.env.OPENAI_API_KEY);
-
   const openAI = new OpenAIApi(configuration);
 
   const correctGrammar = async () => {
