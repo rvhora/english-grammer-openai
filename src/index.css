@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dark-theme {
+  height: 100vh;
+  background-color: #20262e;
+  color: #fff;
+}
+
+.dark-theme .navbar .nav-link {
+  color: #fff;
+}
+
+.dark-theme .logo-span {
+  color: #fff;
+}
+
+.logo-span {
+  font-family: "Montserrat", cursive;
+  color: #20262e;
+}
+
+.theme-changer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1fb88a;
+  padding: 10px;
+  border-radius: 100%;
+}
+
+.theme-changer .fa-moon,
+.fa-sun {
+  color: #fff;
+  font-size: 20px;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.theme-changer i:hover {
+  transform: rotate(120deg);
+}
+
+/* Home.js */
+
+.welcome-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7%;
+}
+
+.icon-item {
+  align-items: flex-start;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  min-width: 0;
+  transition: opacity 0.15s;
+}
+
+.purple-gradient-bg {
+  background-color: #5436da;
+  background-image: url(https://cdn.openai.com/API/images/icon_bg_green.svg);
+  background-size: cover;
+}
+
+.icon-item-icon {
+  border-radius: 4px;
+  color: #fff;
+  flex: 0 0 auto;
+  font-size: 24px;
+  line-height: 0px;
+  padding: 15px;
+}
+
+.icon-item-icon svg {
+  transition: -webkit-transform 0.15s;
+  transition: transform 0.15s;
+  transition: transform 0.15s, -webkit-transform 0.15s;
+}
+
+.icon-item-right {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-left: 16px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.body-large,
+.body-large-mono {
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.body-large {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #e7b10a;
+}
+
+.icon-item-title {
+  color: var(--gray-900);
+  display: inline-block;
+  margin-bottom: 2px;
+  margin-top: 3px;
+  transition: color 0.15s;
+}
+
+.body-small,
+.body-small-mono {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.icon-item-desc {
+  color: var(--gray-600);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.start-btn {
+  background-color: #1fb88a;
+  color: #fff;
+  padding: 5px 30px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.start-btn:hover {
+  border: 1px solid #1fb88a;
+}
+
+.dark-theme .examples-card {
+  background-color: rgba(255, 255, 255, 0.047);
+  backdrop-filter: blur(5px);
+}
+
+.examples-card {
+  border: none;
+  background-color: #f5f5f5;
+}
+
+.fa-arrow-right {
+  color: #1fb88a;
+  margin-left: 10px;
+}
+
+.dark-theme .form-div input,
+.dark-theme .input-group-text {
+  background-color: rgba(255, 255, 255, 0.047);
+  backdrop-filter: blur(5px);
+  box-shadow: none;
+  color: #fff;
+}
+
+.dark-theme .form-div input::placeholder {
+  color: silver;
+}
+
+.form-div input,
+.input-group-text {
+  padding: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: none;
+}
+
+.red-gradient-bg {
+  background-color: #ef4146;
+  background-image: url(https://cdn.openai.com/API/images/icon_bg_red.svg);
+  background-size: cover;
+}
+
+.dark-theme .result-div .card {
+  background-color: rgba(255, 255, 255, 0.047);
+  backdrop-filter: blur(5px);
+}
+
+.green-gradient-bg {
+  background-color: #19c37d;
+  background-image: url(https://cdn.openai.com/API/images/icon_bg_green.svg);
+  background-size: cover;
+}
+
+.dark-theme .navbar-toggler {
+  background-color: rgba(255, 255, 255, 0.242);
+  backdrop-filter: blur(5px);
+}
+
+.error-img {
+  width: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-div .row {
+    padding: 0;
+  }
+  .error-div {
+    margin-top: 100px;
+  }
+  .error-div .error-img {
+    width: 70%;
+  }
+}
